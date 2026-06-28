@@ -72,14 +72,16 @@ resume_qlora/
 ├── cli_demo.py             # M7 命令行 demo ★
 ├── requirements.txt
 ├── .env                    # API Key（已 gitignore，不提交）
-├── data/                   # 训练/验证数据（gitignore）
-├── models/                 # 基座模型（gitignore）
-└── outputs/                # adapter + 评估结果（gitignore）
+├── data/                   # 合成训练/验证数据（已入库，全合成无隐私）
+├── models/                 # 基座模型（gitignore，用 download_model.py 下载）
+└── outputs/                # 最终 LoRA adapter + 评估结果（已入库；体积大的 checkpoint 不入库）
 ```
 
 ---
 
 ## 🚀 复现步骤
+
+> 仓库已附带训练好的 LoRA adapter（`outputs/{ner,resume}_adapter/`，各约 4MB）。只想体验效果可在装好依赖、下载基座模型后**直接跳到第 6/7 步**（评估 / Demo），无需重新训练。
 
 ```bash
 # 0. 建虚拟环境（用纯净的母 Python）
