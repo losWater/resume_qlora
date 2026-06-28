@@ -1,0 +1,32 @@
+# 虚拟环境（绝不提交，几个 GB）
+.venv/
+
+# 密钥 / 配置
+.env
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 模型权重 / adapter / 数据（体积大或含隐私）
+models/
+checkpoints/
+outputs/
+*.safetensors
+*.bin
+*.gguf
+
+# 训练监控本地缓存
+swanlog/
+wandb/
+
+# 数据集（合成简历，避免误传）
+data/*.jsonl
+
+# 仅本地保留, 不入库：个人读代码 / 理解项目的指引
+代码阅读指引.md
+
+# 系统
+.DS_Store
+Thumbs.db

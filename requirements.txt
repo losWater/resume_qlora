@@ -1,0 +1,37 @@
+# ============================================================
+# 简历抽取 QLoRA 项目依赖
+# 硬件: RTX 5060 (Blackwell / sm_120, 8GB)
+# Python: 3.12 (C 盘母 Python 建的 venv)
+# ============================================================
+#
+# ⚠️ torch 不在本文件里！必须单独从 CUDA 12.8 源安装，
+#    否则装到的旧版认不出 50 系显卡。安装命令：
+#
+#    pip install torch --index-url https://download.pytorch.org/whl/cu128
+#
+# 本文件只装其余依赖，安装命令：
+#    pip install -r requirements.txt
+# ------------------------------------------------------------
+
+# --- 微调核心（HuggingFace 全家桶）---
+transformers
+peft
+accelerate
+trl
+datasets
+bitsandbytes          # 4-bit 量化核心，需较新版本支持 Blackwell
+
+# --- 训练监控 / 模型下载（国内友好）---
+swanlab               # 类 wandb，看 loss 曲线
+modelscope            # 国内下载 Qwen 模型，快且稳
+
+# --- 配置 / 工具 ---
+python-dotenv         # 读取 .env，避免硬编码 Key/路径
+openai                # 调 DeepSeek (OpenAI 兼容) 批量生成简历数据
+
+# --- demo（M7，可选；现在装好省事）---
+gradio                # 网页 demo：贴简历 -> 出 JSON + 匹配分
+
+# --- 进阶：约束解码保证 100% 合法 JSON（可选，后续再用）---
+# outlines
+# xgrammar
