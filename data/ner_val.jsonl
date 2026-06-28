@@ -1,0 +1,30 @@
+{"text": "徐丽毕业于京东集团，目前在上海工作。", "entities": [{"entity": "徐丽", "type": "人名"}, {"entity": "京东集团", "type": "机构名"}, {"entity": "上海", "type": "地名"}]}
+{"text": "王芳毕业于字节跳动，目前在北京工作。", "entities": [{"entity": "王芳", "type": "人名"}, {"entity": "字节跳动", "type": "机构名"}, {"entity": "北京", "type": "地名"}]}
+{"text": "刘洋是清华大学的高级工程师。", "entities": [{"entity": "刘洋", "type": "人名"}, {"entity": "清华大学", "type": "机构名"}]}
+{"text": "刘洋出生于南京，后来定居广州。", "entities": [{"entity": "刘洋", "type": "人名"}, {"entity": "南京", "type": "地名"}, {"entity": "广州", "type": "地名"}]}
+{"text": "周婷是工商银行的高级工程师。", "entities": [{"entity": "周婷", "type": "人名"}, {"entity": "工商银行", "type": "机构名"}]}
+{"text": "作为京东集团的代表，孙鹏发表了演讲。", "entities": [{"entity": "京东集团", "type": "机构名"}, {"entity": "孙鹏", "type": "人名"}]}
+{"text": "去年吴昊从苏州搬到了广州。", "entities": [{"entity": "吴昊", "type": "人名"}, {"entity": "苏州", "type": "地名"}, {"entity": "广州", "type": "地名"}]}
+{"text": "刘洋毕业于阿里巴巴，目前在长沙工作。", "entities": [{"entity": "刘洋", "type": "人名"}, {"entity": "阿里巴巴", "type": "机构名"}, {"entity": "长沙", "type": "地名"}]}
+{"text": "刘洋和张伟一起参加了在苏州举办的会议。", "entities": [{"entity": "刘洋", "type": "人名"}, {"entity": "张伟", "type": "人名"}, {"entity": "苏州", "type": "地名"}]}
+{"text": "作为清华大学的代表，李娜发表了演讲。", "entities": [{"entity": "清华大学", "type": "机构名"}, {"entity": "李娜", "type": "人名"}]}
+{"text": "作为字节跳动的代表，朱琳发表了演讲。", "entities": [{"entity": "字节跳动", "type": "机构名"}, {"entity": "朱琳", "type": "人名"}]}
+{"text": "作为工商银行的代表，黄强发表了演讲。", "entities": [{"entity": "工商银行", "type": "机构名"}, {"entity": "黄强", "type": "人名"}]}
+{"text": "刘洋出生于深圳，后来定居长沙。", "entities": [{"entity": "刘洋", "type": "人名"}, {"entity": "深圳", "type": "地名"}, {"entity": "长沙", "type": "地名"}]}
+{"text": "复旦大学与字节跳动在深圳签署了合作协议。", "entities": [{"entity": "复旦大学", "type": "机构名"}, {"entity": "字节跳动", "type": "机构名"}, {"entity": "深圳", "type": "地名"}]}
+{"text": "作为中国银行的代表，吴昊发表了演讲。", "entities": [{"entity": "中国银行", "type": "机构名"}, {"entity": "吴昊", "type": "人名"}]}
+{"text": "李娜出生于武汉，后来定居成都。", "entities": [{"entity": "李娜", "type": "人名"}, {"entity": "武汉", "type": "地名"}, {"entity": "成都", "type": "地名"}]}
+{"text": "这次深圳之行，陈静拜访了字节跳动。", "entities": [{"entity": "深圳", "type": "地名"}, {"entity": "陈静", "type": "人名"}, {"entity": "字节跳动", "type": "机构名"}]}
+{"text": "作为中国银行的代表，李娜发表了演讲。", "entities": [{"entity": "中国银行", "type": "机构名"}, {"entity": "李娜", "type": "人名"}]}
+{"text": "陈静出生于武汉，后来定居青岛。", "entities": [{"entity": "陈静", "type": "人名"}, {"entity": "武汉", "type": "地名"}, {"entity": "青岛", "type": "地名"}]}
+{"text": "孙鹏和赵敏一起参加了在西安举办的会议。", "entities": [{"entity": "孙鹏", "type": "人名"}, {"entity": "赵敏", "type": "人名"}, {"entity": "西安", "type": "地名"}]}
+{"text": "去年赵敏从长沙搬到了重庆。", "entities": [{"entity": "赵敏", "type": "人名"}, {"entity": "长沙", "type": "地名"}, {"entity": "重庆", "type": "地名"}]}
+{"text": "作为清华大学的代表，孙鹏发表了演讲。", "entities": [{"entity": "清华大学", "type": "机构名"}, {"entity": "孙鹏", "type": "人名"}]}
+{"text": "去年马超从南京搬到了厦门。", "entities": [{"entity": "马超", "type": "人名"}, {"entity": "南京", "type": "地名"}, {"entity": "厦门", "type": "地名"}]}
+{"text": "杨磊和陈静一起参加了在广州举办的会议。", "entities": [{"entity": "杨磊", "type": "人名"}, {"entity": "陈静", "type": "人名"}, {"entity": "广州", "type": "地名"}]}
+{"text": "胡军是中科院的高级工程师。", "entities": [{"entity": "胡军", "type": "人名"}, {"entity": "中科院", "type": "机构名"}]}
+{"text": "作为北京大学的代表，张伟发表了演讲。", "entities": [{"entity": "北京大学", "type": "机构名"}, {"entity": "张伟", "type": "人名"}]}
+{"text": "腾讯科技与清华大学在杭州签署了合作协议。", "entities": [{"entity": "腾讯科技", "type": "机构名"}, {"entity": "清华大学", "type": "机构名"}, {"entity": "杭州", "type": "地名"}]}
+{"text": "复旦大学总部位于苏州，由李娜负责。", "entities": [{"entity": "复旦大学", "type": "机构名"}, {"entity": "苏州", "type": "地名"}, {"entity": "李娜", "type": "人名"}]}
+{"text": "徐丽和陈静一起参加了在深圳举办的会议。", "entities": [{"entity": "徐丽", "type": "人名"}, {"entity": "陈静", "type": "人名"}, {"entity": "深圳", "type": "地名"}]}
+{"text": "周婷是腾讯科技的高级工程师。", "entities": [{"entity": "周婷", "type": "人名"}, {"entity": "腾讯科技", "type": "机构名"}]}

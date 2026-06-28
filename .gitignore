@@ -9,20 +9,19 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
-# 模型权重 / adapter / 数据（体积大或含隐私）
+# 基座模型（体积大，用 download_model.py 重新下载）
 models/
 checkpoints/
-outputs/
-*.safetensors
-*.bin
 *.gguf
+
+# 训练 checkpoint（体积大，可重新训练；保留最终 adapter 以便直接加载）
+outputs/**/checkpoint-*/
 
 # 训练监控本地缓存
 swanlog/
 wandb/
 
-# 数据集（合成简历，避免误传）
-data/*.jsonl
+# 注：合成简历数据 data/*.jsonl 与最终 LoRA adapter 已纳入版本库
 
 # 仅本地保留, 不入库：个人读代码 / 理解项目的指引
 代码阅读指引.md

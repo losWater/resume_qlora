@@ -1,0 +1,57 @@
+{
+  "before": {
+    "json_parse_rate": 0.9655172413793104,
+    "name_acc": 0.9310344827586207,
+    "work_years_acc": 0.7931034482758621,
+    "skills_f1": 0.7679324894514769,
+    "education_f1": 0.6493506493506495,
+    "experience_f1": 0.625,
+    "avg_list_f1": 0.6807610462673755
+  },
+  "after": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.9655172413793104,
+    "work_years_acc": 0.896551724137931,
+    "skills_f1": 0.8559670781893004,
+    "education_f1": 0.9,
+    "experience_f1": 0.6304347826086957,
+    "avg_list_f1": 0.7954672869326654
+  },
+  "table": [
+    {
+      "metric": "JSON 可解析率",
+      "before": 0.9655,
+      "after": 1.0
+    },
+    {
+      "metric": "姓名准确率",
+      "before": 0.931,
+      "after": 0.9655
+    },
+    {
+      "metric": "工作年限准确率",
+      "before": 0.7931,
+      "after": 0.8966
+    },
+    {
+      "metric": "技能 F1",
+      "before": 0.7679,
+      "after": 0.856
+    },
+    {
+      "metric": "教育经历 F1",
+      "before": 0.6494,
+      "after": 0.9
+    },
+    {
+      "metric": "工作经历 F1",
+      "before": 0.625,
+      "after": 0.6304
+    },
+    {
+      "metric": "列表字段平均 F1",
+      "before": 0.6808,
+      "after": 0.7955
+    }
+  ]
+}
