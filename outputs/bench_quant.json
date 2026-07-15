@@ -1,0 +1,14 @@
+{
+  "mode": "quant",
+  "n_samples": 27,
+  "max_new_tokens": 512,
+  "load_seconds": 3.7,
+  "vram_model_gb": 1.08,
+  "vram_peak_infer_gb": 1.15,
+  "first_token_ms_mean": 102.0,
+  "first_token_ms_p95": 117.8,
+  "e2e_s_mean": 12.71,
+  "e2e_s_p95": 17.26,
+  "gen_tokens_mean": 153.6,
+  "decode_tokens_per_s": 12.2
+}

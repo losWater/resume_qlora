@@ -1,0 +1,33 @@
+{
+  "note": "29 条 val 真实 prompt, 贪心解码, 前 2 条热身不计入; quant=4bit+adapter, merged=合并后 bf16",
+  "results": {
+    "quant": {
+      "mode": "quant",
+      "n_samples": 27,
+      "max_new_tokens": 512,
+      "load_seconds": 3.7,
+      "vram_model_gb": 1.08,
+      "vram_peak_infer_gb": 1.15,
+      "first_token_ms_mean": 102.0,
+      "first_token_ms_p95": 117.8,
+      "e2e_s_mean": 12.71,
+      "e2e_s_p95": 17.26,
+      "gen_tokens_mean": 153.6,
+      "decode_tokens_per_s": 12.2
+    },
+    "merged": {
+      "mode": "merged",
+      "n_samples": 27,
+      "max_new_tokens": 512,
+      "load_seconds": 3.1,
+      "vram_model_gb": 2.88,
+      "vram_peak_infer_gb": 2.93,
+      "first_token_ms_mean": 61.0,
+      "first_token_ms_p95": 80.2,
+      "e2e_s_mean": 5.98,
+      "e2e_s_p95": 8.46,
+      "gen_tokens_mean": 152.8,
+      "decode_tokens_per_s": 25.8
+    }
+  }
+}

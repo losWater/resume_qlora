@@ -1,0 +1,14 @@
+{
+  "mode": "merged",
+  "n_samples": 27,
+  "max_new_tokens": 512,
+  "load_seconds": 3.1,
+  "vram_model_gb": 2.88,
+  "vram_peak_infer_gb": 2.93,
+  "first_token_ms_mean": 61.0,
+  "first_token_ms_p95": 80.2,
+  "e2e_s_mean": 5.98,
+  "e2e_s_p95": 8.46,
+  "gen_tokens_mean": 152.8,
+  "decode_tokens_per_s": 25.8
+}
