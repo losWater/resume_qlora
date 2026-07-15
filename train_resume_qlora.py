@@ -1,10 +1,10 @@
-"""
+﻿"""
 M4: 用 QLoRA 微调 Qwen2.5-1.5B-Instruct 做简历结构化抽取 (简历文本 -> JSON)。
 复用 M2 的链路, 只换数据/指令/输出目录, max_length 调大 (简历比 NER 句子长)。
 
 运行:  .venv\\Scripts\\python.exe train_resume_qlora.py
 """
-import sys, json
+import sys, json, argparse
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:
@@ -24,6 +24,12 @@ VAL_FILE = r"D:\cv_view\resume_qlora\data\resume_val.jsonl"
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--output_dir", default=OUTPUT_DIR,
+                    help="adapter 输出目录 (默认不变; 重标数据重训时传 v2 目录以保留旧 adapter)")
+    args = ap.parse_args()
+    out_dir = args.output_dir
+
     tok = AutoTokenizer.from_pretrained(MODEL_PATH)
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
@@ -60,7 +66,7 @@ def main():
     ds = ds.map(to_chat, remove_columns=ds["train"].column_names)
 
     cfg = SFTConfig(
-        output_dir=OUTPUT_DIR,
+        output_dir=out_dir,
         max_length=1024,                    # 简历比 NER 长, 调大
         completion_only_loss=True,
         packing=False,
@@ -92,9 +98,9 @@ def main():
     print("=" * 60)
     trainer.train()
 
-    trainer.save_model(OUTPUT_DIR)
-    tok.save_pretrained(OUTPUT_DIR)
-    print(f"\n训练完成，adapter 已保存到: {OUTPUT_DIR}")
+    trainer.save_model(out_dir)
+    tok.save_pretrained(out_dir)
+    print(f"\n训练完成，adapter 已保存到: {out_dir}")
 
 
 if __name__ == "__main__":

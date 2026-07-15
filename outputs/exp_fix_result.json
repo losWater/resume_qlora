@@ -1,0 +1,106 @@
+{
+  "note": "①旧adapter×旧gold(引自ood_eval_result.json) ②旧adapter×新gold ③新adapter×新gold",
+  "stage1_old_model_old_gold": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.9655172413793104,
+    "work_years_acc": 0.896551724137931,
+    "skills_f1": 0.8559670781893004,
+    "education_f1": 0.9,
+    "experience_f1": 0.6304347826086957,
+    "avg_list_f1": 0.7954672869326654
+  },
+  "stage2_old_model_new_gold": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.9655172413793104,
+    "work_years_acc": 0.896551724137931,
+    "skills_f1": 0.8559670781893004,
+    "education_f1": 0.9,
+    "experience_f1": 0.6521739130434782,
+    "avg_list_f1": 0.8027136637442595
+  },
+  "stage3_new_model_new_gold": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.9655172413793104,
+    "work_years_acc": 0.896551724137931,
+    "skills_f1": 0.8547717842323651,
+    "education_f1": 0.888888888888889,
+    "experience_f1": 0.7555555555555555,
+    "avg_list_f1": 0.8330720762256032
+  },
+  "ood_old_adapter": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.975,
+    "work_years_acc": 0.475,
+    "skills_f1": 0.6741071428571429,
+    "education_f1": 0.780952380952381,
+    "experience_f1": 0.7764705882352942,
+    "avg_list_f1": 0.743843370681606
+  },
+  "ood_new_adapter": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.975,
+    "work_years_acc": 0.375,
+    "skills_f1": 0.6636363636363637,
+    "education_f1": 0.8113207547169812,
+    "experience_f1": 0.8313253012048193,
+    "avg_list_f1": 0.768760806519388
+  },
+  "table": [
+    {
+      "metric": "JSON 可解析率",
+      "s1": 1.0,
+      "s2": 1.0,
+      "s3": 1.0,
+      "eval_correction_pp": 0.0,
+      "true_gain_pp": 0.0
+    },
+    {
+      "metric": "姓名准确率",
+      "s1": 0.9655,
+      "s2": 0.9655,
+      "s3": 0.9655,
+      "eval_correction_pp": 0.0,
+      "true_gain_pp": 0.0
+    },
+    {
+      "metric": "工作年限准确率",
+      "s1": 0.8966,
+      "s2": 0.8966,
+      "s3": 0.8966,
+      "eval_correction_pp": 0.0,
+      "true_gain_pp": 0.0
+    },
+    {
+      "metric": "技能 F1",
+      "s1": 0.856,
+      "s2": 0.856,
+      "s3": 0.8548,
+      "eval_correction_pp": 0.0,
+      "true_gain_pp": -0.1
+    },
+    {
+      "metric": "教育经历 F1",
+      "s1": 0.9,
+      "s2": 0.9,
+      "s3": 0.8889,
+      "eval_correction_pp": 0.0,
+      "true_gain_pp": -1.1
+    },
+    {
+      "metric": "工作经历 F1",
+      "s1": 0.6304,
+      "s2": 0.6522,
+      "s3": 0.7556,
+      "eval_correction_pp": 2.2,
+      "true_gain_pp": 10.3
+    },
+    {
+      "metric": "列表字段平均 F1",
+      "s1": 0.7955,
+      "s2": 0.8027,
+      "s3": 0.8331,
+      "eval_correction_pp": 0.7,
+      "true_gain_pp": 3.0
+    }
+  ]
+}

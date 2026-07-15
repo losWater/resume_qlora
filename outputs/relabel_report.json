@@ -1,0 +1,15 @@
+{
+  "model": "deepseek-v4-flash",
+  "files": {
+    "data/resume_train.jsonl": {
+      "n": 270,
+      "changed": 210,
+      "failed": 0
+    },
+    "data/resume_val.jsonl": {
+      "n": 29,
+      "changed": 21,
+      "failed": 0
+    }
+  }
+}
