@@ -17,6 +17,9 @@ checkpoints/
 # 训练 checkpoint（体积大，可重新训练；保留最终 adapter 以便直接加载）
 outputs/**/checkpoint-*/
 
+# 消融实验的各组 adapter（只入库汇总结果 outputs/ablation_results.json）
+outputs/ablation/
+
 # 训练监控本地缓存
 swanlog/
 wandb/

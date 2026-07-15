@@ -1,0 +1,178 @@
+{
+  "seed": 42,
+  "val_file": "data/resume_val.jsonl",
+  "note": "控制变量消融: 每组只改一个维度; 评估口径与 outputs/eval_result.json 一致",
+  "results": [
+    {
+      "config": {
+        "name": "baseline_r8",
+        "r": 8,
+        "lora_alpha": 16,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "learning_rate": 0.0002,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 2179072,
+      "train_seconds": 279.5,
+      "peak_vram_gb": 2.42,
+      "metrics": {
+        "json_parse_rate": 1.0,
+        "name_acc": 0.9655,
+        "work_years_acc": 0.8966,
+        "skills_f1": 0.8465,
+        "education_f1": 0.925,
+        "experience_f1": 0.587,
+        "avg_list_f1": 0.7861
+      }
+    },
+    {
+      "config": {
+        "name": "r4",
+        "r": 4,
+        "lora_alpha": 8,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "learning_rate": 0.0002,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 1089536,
+      "train_seconds": 272.4,
+      "peak_vram_gb": 2.41,
+      "metrics": {
+        "json_parse_rate": 1.0,
+        "name_acc": 0.9655,
+        "work_years_acc": 0.8966,
+        "skills_f1": 0.8523,
+        "education_f1": 0.875,
+        "experience_f1": 0.6087,
+        "avg_list_f1": 0.7787
+      }
+    },
+    {
+      "config": {
+        "name": "r16",
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "learning_rate": 0.0002,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 4358144,
+      "train_seconds": 282.1,
+      "peak_vram_gb": 2.43,
+      "metrics": {
+        "json_parse_rate": 1.0,
+        "name_acc": 0.9655,
+        "work_years_acc": 0.8966,
+        "skills_f1": 0.8571,
+        "education_f1": 0.925,
+        "experience_f1": 0.6304,
+        "avg_list_f1": 0.8042
+      }
+    },
+    {
+      "config": {
+        "name": "qkvo_mlp",
+        "r": 8,
+        "lora_alpha": 16,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj",
+          "gate_proj",
+          "up_proj",
+          "down_proj"
+        ],
+        "learning_rate": 0.0002,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 9232384,
+      "train_seconds": 350.0,
+      "peak_vram_gb": 2.46,
+      "metrics": {
+        "json_parse_rate": 1.0,
+        "name_acc": 0.9655,
+        "work_years_acc": 0.8966,
+        "skills_f1": 0.8571,
+        "education_f1": 0.925,
+        "experience_f1": 0.7033,
+        "avg_list_f1": 0.8285
+      }
+    },
+    {
+      "config": {
+        "name": "lr1e-4",
+        "r": 8,
+        "lora_alpha": 16,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "learning_rate": 0.0001,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 2179072,
+      "train_seconds": 280.0,
+      "peak_vram_gb": 2.42,
+      "metrics": {
+        "json_parse_rate": 0.9655,
+        "name_acc": 0.931,
+        "work_years_acc": 0.8621,
+        "skills_f1": 0.8362,
+        "education_f1": 0.7949,
+        "experience_f1": 0.6364,
+        "avg_list_f1": 0.7558
+      }
+    },
+    {
+      "config": {
+        "name": "lr5e-4",
+        "r": 8,
+        "lora_alpha": 16,
+        "target_modules": [
+          "q_proj",
+          "k_proj",
+          "v_proj",
+          "o_proj"
+        ],
+        "learning_rate": 0.0005,
+        "epochs": 3,
+        "seed": 42
+      },
+      "trainable_params": 2179072,
+      "train_seconds": 278.1,
+      "peak_vram_gb": 2.42,
+      "metrics": {
+        "json_parse_rate": 1.0,
+        "name_acc": 0.9655,
+        "work_years_acc": 0.9655,
+        "skills_f1": 0.8421,
+        "education_f1": 0.925,
+        "experience_f1": 0.6087,
+        "avg_list_f1": 0.7919
+      }
+    }
+  ]
+}
