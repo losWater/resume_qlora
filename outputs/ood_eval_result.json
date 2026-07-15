@@ -1,0 +1,70 @@
+{
+  "adapter": "outputs/resume_adapter (SFT, r=8 QKVO lr=2e-4)",
+  "in_dist_file": "data/resume_val.jsonl",
+  "ood_file": "data/resume_ood.jsonl",
+  "n_in_dist": 29,
+  "n_ood": 40,
+  "ood_construction": "换生成模型(deepseek-reasoner) + 脏格式模板(口语化/字段缺失/断档/缩写/技能内嵌/错别字/时间格式混乱)",
+  "in_dist": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.9655172413793104,
+    "work_years_acc": 0.896551724137931,
+    "skills_f1": 0.8559670781893004,
+    "education_f1": 0.9,
+    "experience_f1": 0.6304347826086957,
+    "avg_list_f1": 0.7954672869326654
+  },
+  "ood": {
+    "json_parse_rate": 1.0,
+    "name_acc": 0.975,
+    "work_years_acc": 0.475,
+    "skills_f1": 0.6741071428571429,
+    "education_f1": 0.780952380952381,
+    "experience_f1": 0.7764705882352942,
+    "avg_list_f1": 0.743843370681606
+  },
+  "table": [
+    {
+      "metric": "JSON 可解析率",
+      "in_dist": 1.0,
+      "ood": 1.0,
+      "delta_pp": 0.0
+    },
+    {
+      "metric": "姓名准确率",
+      "in_dist": 0.9655,
+      "ood": 0.975,
+      "delta_pp": 0.9
+    },
+    {
+      "metric": "工作年限准确率",
+      "in_dist": 0.8966,
+      "ood": 0.475,
+      "delta_pp": -42.2
+    },
+    {
+      "metric": "技能 F1",
+      "in_dist": 0.856,
+      "ood": 0.6741,
+      "delta_pp": -18.2
+    },
+    {
+      "metric": "教育经历 F1",
+      "in_dist": 0.9,
+      "ood": 0.781,
+      "delta_pp": -11.9
+    },
+    {
+      "metric": "工作经历 F1",
+      "in_dist": 0.6304,
+      "ood": 0.7765,
+      "delta_pp": 14.6
+    },
+    {
+      "metric": "列表字段平均 F1",
+      "in_dist": 0.7955,
+      "ood": 0.7438,
+      "delta_pp": -5.2
+    }
+  ]
+}
